@@ -5,3 +5,8 @@ def index(request):
         contexto = {'titulo' : 'Login/Registro' }
         return render(request , 'index.html' , contexto)
 
+def login(request):
+    if request.method == 'GET':
+        contexto = {'titulo' : 'Login'}
+        return render(request , 'login.html' , contexto)
+
